@@ -847,6 +847,26 @@
         text-transform: uppercase;
         color: #6e6a85;
       }
+      .credito {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        text-decoration: none;
+        color: #6e6a85;
+        transition: color 0.25s;
+      }
+      .credito img {
+        height: 15px;
+        width: auto;
+        opacity: 0.72;
+        transition: opacity 0.25s;
+      }
+      .credito:hover {
+        color: #cfccdd;
+      }
+      .credito:hover img {
+        opacity: 1;
+      }
 
       .sr {
         opacity: 0;
@@ -1834,6 +1854,14 @@
             J-408204916</span
           >
           <span>Maracaibo · Zulia · Venezuela</span>
+          <a
+            class="credito"
+            href="https://1bite.studio"
+            target="_blank"
+            rel="noopener"
+            >Developed by
+            <img src="img/1bite-white.webp" alt="1bite Studio" loading="lazy"
+          /></a>
         </div>
       </div>
     </footer>
