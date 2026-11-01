@@ -823,14 +823,16 @@
       }
       .credito {
         display: inline-flex;
+        flex-direction: column;
         align-items: center;
-        gap: 9px;
+        gap: 3px;
         text-decoration: none;
         color: #6e6a85;
         transition: color 0.25s;
       }
       .credito img {
-        height: 15px;
+        height: auto;
+        width: 48px;
         width: auto;
         opacity: 0.72;
         transition: opacity 0.25s;
@@ -841,6 +843,7 @@
       .credito:hover img {
         opacity: 1;
       }
+      .credito::after { content: ""; display: block; width: 48px; height: 2px; background: linear-gradient(90deg,#08e1f4,#1679ff 25%,#a52cff 50%,#ed2d91 75%,#fd6648); }
 
       .sr {
         opacity: 0;
@@ -1877,7 +1880,7 @@
             target="_blank"
             rel="noopener"
             >Developed by
-            <img src="img/1bite-white.webp" alt="1bite Studio" loading="lazy"
+            <img src="img/1bite-credit-logo.png" alt="1bite Studio" loading="lazy"
           /></a>
         </div>
       </div>
